@@ -1,30 +1,33 @@
-class Stack{
-  constructor(){
+class Stack {
+  constructor() {
     this.collection = [];
   }
 
-  push(e){
+  push(e) {
     this.collection.push(e);
   }
 
-  pop(){
-    return(this.collection.pop())
+  pop() {
+    return this.collection.pop();
   }
 
-  peek(){
-    return this.collection[this.collection.length-1]
+  peek() {
+    return this.collection[this.collection.length - 1];
   }
 
-  isEmpty(){
+  isEmpty() {
     return this.collection.length === 0 ? true : false;
   }
 
-  clear(){
+  clear() {
     this.collection = [];
   }
- 
-  print(){
+
+  print() {
     console.log(this.collection);
   }
-}
 
+  size() {
+    return this.collection.length;
+  }
+}
